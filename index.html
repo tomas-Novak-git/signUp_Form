@@ -15,7 +15,7 @@
     <div class="mainWrapper">
         <div class="leftWrapper">
                 <div class="iconPart">
-                    <img src="odin-lined.png" class="icon" alt="drum Icon">
+                    <img src="drumIcon.png" class="icon" alt="drum Icon">
                     <p class="iconText">DRUM LESSONS</p>
                 </div>
                 <img src="drumsetPhotoEdit.png" class="drumPicture" alt="Drumset">
@@ -25,11 +25,11 @@
                     <h1>WELCOME TO DRUM LESSONS WITH<br> TOMAS!</h1>
                     <h2> Let's explore together where your drumming skills can go.<br>
                     Sign up to step forward towards your dreams on stage!</h2>
-                    <p>You <em>know</em> you want to.</p>
+                    <p>You <em>know</em>  you want to.</p>
                     </div>
                     <div class="form">
-                        <p>Let's do this!</p>
-                        <form action="#" method="post">
+                        <p id="formTop">Let's do this!</p>
+                        <form action="#" method="post" id="formCss">
                             <div class="firstColumn">
                                     <label for="firstName">FIRST NAME</label>
                                 <input type="text" id="firstName" maxlength="20" placeholder="John" required>
@@ -42,7 +42,7 @@
                                     <label for="secondName">SECOND NAME</label>
                                 <input type="text" id="secondName" maxlength="20" placeholder="Snow" required>
                                     <label for="phoneNumber">PHONE NUMBER</label>
-                                <input type="text" id="phoneNumber" required pattern="[+420]" maxlength="16">
+                                <input type="text" id="phoneNumber" required pattern="[+420]" maxlength="16" placeholder="+420 XXX XXX XXX">
                                     <label for="passConfirm">CONFIRM PASSWORD</label>
                                 <input type="password" id="passConfirm" placeholder="Please confirm" required>
                                 </div>
@@ -50,7 +50,10 @@
                         </form>
 
                     </div>
+                <div class="submitPart">
                     <button type="submit" onclick="matchPassword()">Create account</button>
+                    <p>Already have account? <a href="#">Log In</a></p>
+                </div>
         </div>
 </div>
 <script>
@@ -59,7 +62,8 @@ function matchPassword() {
     var pw2 = document.getElementById("passConfirm");  
     if(pw1 != pw2)  
     {   
-      alert("Passwords did not match");  
+      alert("Passwords did not match");
+
     } else {  
       alert("Account created successfully");  
     }  
