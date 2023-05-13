@@ -1,4 +1,4 @@
-body,h1, h2, p, img, div {
+body,h1, h2, img, div {
     margin: 0;
 	padding: 0;
 	border: 0;
@@ -85,6 +85,8 @@ button, input, label, p {
 }
 #formTop {
     margin-left: 10%;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
     font-size: 1.5rem;
 }
 #formCss{
