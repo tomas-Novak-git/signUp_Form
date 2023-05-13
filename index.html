@@ -22,16 +22,48 @@
         </div>
         <div class="rightWrapper">
                 <div class="textArea">
-                    <h1>WELCOME TO DRUM LESSONS WITH TOMAS!</h1>
+                    <h1>WELCOME TO DRUM LESSONS WITH<br> TOMAS!</h1>
                     <h2> Let's explore together where your drumming skills can go.<br>
                     Sign up to step forward towards your dreams on stage!</h2>
                     <p>You <em>know</em> you want to.</p>
                     </div>
                     <div class="form">
+                        <p>Let's do this!</p>
+                        <form action="#" method="post">
+                            <div class="firstColumn">
+                                    <label for="firstName">FIRST NAME</label>
+                                <input type="text" id="firstName" maxlength="20" placeholder="John" required>
+                                    <label for="email">EMAIL</label>
+                                <input type="email" placeholder="you@example.com" required>
+                                    <label for="userPassword">PASSWORD</label>
+                                    <input type="password" id="userPassword" placeholder="min-length: 6" minlength="6" required>
+                                </div>
+                            <div class="secondColumn">
+                                    <label for="secondName">SECOND NAME</label>
+                                <input type="text" id="secondName" maxlength="20" placeholder="Snow" required>
+                                    <label for="phoneNumber">PHONE NUMBER</label>
+                                <input type="text" id="phoneNumber" required pattern="[+420]" maxlength="16">
+                                    <label for="passConfirm">CONFIRM PASSWORD</label>
+                                <input type="password" id="passConfirm" placeholder="Please confirm" required>
+                                </div>
+
+                        </form>
 
                     </div>
-                    <button></button>
+                    <button type="submit" onclick="matchPassword()">Create account</button>
         </div>
 </div>
+<script>
+function matchPassword() {  
+    var pw1 = document.getElementById("userPassword");  
+    var pw2 = document.getElementById("passConfirm");  
+    if(pw1 != pw2)  
+    {   
+      alert("Passwords did not match");  
+    } else {  
+      alert("Account created successfully");  
+    }  
+  }  
+</script>
 </body>
 </html>

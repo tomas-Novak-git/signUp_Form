@@ -62,13 +62,19 @@ body {
 
 .textArea {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 10rem;
-    border-top: solid 1px rgba(224, 223, 223, 0.488);
+    margin-top: 5rem;
+    border-top: solid 1px rgba(148, 43, 20, 0.8);
 }
 h1 {
     font-size: 2rem;
     padding: 2rem 0 2rem 0;
 }
-#signUp{
-    font-weight: bolder;
+
+button, input, label, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* form */
+.form{
+    max-width: 69%;
 }
