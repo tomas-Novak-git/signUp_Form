@@ -59,12 +59,15 @@ body {
 
 .textArea {
     font-family: 'Montserrat', sans-serif;
-    margin: 5rem 5rem 0 5rem;
+    margin: 5%;
     border-top: solid 1px rgba(148, 43, 20, 0.8);
 }
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem 0 1rem 0;
+}
+h2 {
+    font-size: 1.2rem;
 }
 
 button, input, label, p {
@@ -80,17 +83,20 @@ button, input, label, p {
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.4);
 }
 #formTop {
-    margin-left: 5rem;
+    margin-left: 5%;
     font-size: 1.5rem;
 }
 #formCss{
     display: flex;
     justify-content: flex-start;
     gap: 5rem;
-    margin-left: 5rem;
+    margin-left: 5%;
 }
 .firstColumn, .secondColumn {
     width: 15rem;
+}
+label {
+    height: 2rem;
 }
 input {
     width: 12rem;
@@ -109,7 +115,9 @@ input:invalid {
     border: #f9a6a6 1px solid;
 }
 .submitPart {
-    margin: 3rem 0 0 5rem;
+    margin: 5%;
+    position: relative;
+    z-index: 1;
 }
 button {
     padding: 1rem 1.5rem 1rem 1.5rem;
@@ -117,7 +125,7 @@ button {
     color: aliceblue;
     background-color: rgb(168 44 24);
     border: 1px solid rgba(0, 0, 0, 0.786);
-    border-radius: 8px;
+    border-radius: 3px;
 }
 button:hover{
     background-color: rgb(168, 84, 71);
@@ -129,4 +137,9 @@ button:active{
 }
 a {
     color: rgb(168 44 24);
+}
+.rightsPart{
+    position: absolute;
+    color: #ededed9e;
+    bottom: 0.2rem;
 }
